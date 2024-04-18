@@ -1,0 +1,230 @@
+@media (min-width: 500px) and (orientation: landscape) {
+    /* … */
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+}
+
+body {
+    --s: 30px; /* control the size */
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+    
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                            var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+}
+
+.header a{
+    color: #030303;
+    font-weight: bold;
+}
+
+.header{
+    background: #ffffff;
+    width: 90%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    font-size: 120%;
+    border: 1px solid #030303;
+    border-radius: 10px;
+    
+
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.logo img{
+    display: flex;
+    object-fit: cover;
+    height: 100px;
+    margin-top: -140px;
+    margin-left: 250px;
+    padding: 20px 20px;
+    border-radius: 1px 40px;
+}
+    
+
+
+
+/* Aqui comienza CSS de index.html */
+
+
+.header .enlace:hover{
+
+    background: #da0f0f;
+    color: #080808;
+    border-radius: 25px 25px 25px 25px;
+    transition: 0.2s ;
+}
+
+.Textoinicioprincipal{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+
+    margin: 20px auto;
+    align-items: center;
+    text-align: center;
+    background-color: #323232;
+    color: #f7f8f7;
+    width: 80%;
+    height: 250px;
+    line-height: 250%;  
+    border-radius: 25px 25px 25px 25px; 
+}
+
+.Textoinicioprincipal .buttoninicio1{
+    color: #0b0000;
+    background: #fefdfd;
+    padding: 5px 10px;
+    border: 3px solid rgb(127, 127, 130);
+    border-radius: 15px 15px 15px 15px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 10%;
+    margin: 20px auto;
+
+}
+
+.Textoinicioprincipal .buttoninicio1:hover{
+
+    background: #86f0b4;
+    color: #080808;
+    border-radius: 15px 15px 15px 15px;
+    transition: 0.2s ;
+}
+
+.container{
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translatey(-2%);
+}
+
+.card{
+    width:100% ;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 300ms ease;
+}
+
+.card .imgi{
+    width: 100%;
+    height: 250px;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    text-decoration: none;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card .contenido a{
+    margin: 20px;
+    color: #030303;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+.container1{
+    margin-top: 90px;
+    margin: 50px;
+    max-width:18%;
+}
+
+.card2 .p1{
+    width: 150px;
+    margin: 280px;
+    margin-top: -250px;
+    font-weight: bold;
+}
+
+.card2 .p2{
+    width: 200px;
+    margin: 280px;
+    margin-top: -250px;
+    text-align:justify;
+}
+
+.container1 a{
+    color: #030303;
+}
+
+.card2 .p3{
+
+    width: 30%;
+    margin: 280px;
+    margin-top: -255px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+.card1 .imgi1{
+    width: 100%;
+    height: 250px;
+}
+
+.card1 p{
+    margin: 40px;
+}
+
+.card1:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translatey(-2%);
+}
+
+footer{
+    border:2px solid #030303 ;
+    padding: 100px 100px;
+    margin-top: 1000px;
+    border-radius: 15px 15px 15px 15px;
+    height: 100px;
+}
+
+/* Aqui comienza CSS de random.html */

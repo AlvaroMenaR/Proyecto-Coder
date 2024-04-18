@@ -55,6 +55,7 @@ header{
 /* BANNER */
 .banner{
     padding: 0px 0px;
+    margin-top: -40px;
     --s: 30px; /* control the size */
     --c1: #b2b2b2;
     --c2: #ffffff;

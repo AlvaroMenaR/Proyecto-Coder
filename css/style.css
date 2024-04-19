@@ -95,7 +95,6 @@ header{
     margin-top: -40px;
     width: 95%;
     background-color: #d3e6db;
-
 }
 
 
@@ -205,6 +204,31 @@ header{
     color: #fff;
 }
 
+/* ENTRENAMIENTO */
+
+.entrenamiento{
+    margin-top: -40px;
+    width: 90%;
+    background-color: #d3e6db;
+}
+
+/* CARD ENTRENAMIENTO */
+.product-card-entrenamiento {
+    display: flex;
+    background-color: RGB(260, 260, 235);
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.product-card-entrenamiento img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+}
+
+
+
+
 
 /* RESPONSIVE */
 
@@ -261,5 +285,20 @@ header{
         padding: 35px 0px;
     }
 
+        /* ENTRENAMIENTO */
+    .product-card-entrenamiento .card-title{
+        font-size: 10px;
+
+    }
+    .product-card-entrenamiento .card-text{
+        font-size: 10px;
+    }
+    .product-card-entrenamiento img {
+        margin-top: 8%;
+    }
+
+    .cuadro-entrenamiento{
+        margin-top: -10%;
+    }
 }
 

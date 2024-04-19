@@ -130,23 +130,25 @@
         </section>
 
             <!-- FORMULARIO -->
-            
-            <section class="container-fluid p-2 mt-2 rounded  contact">
+
+            <!--   Submitform HTML/AJAX-->
+
+            <section class="container-fluid p-5 mt-4 rounded  contact">
                 <p class="text-uppercase fs-5">Inscríbete en nuestro newsletter & noticias destacadas!</p>
-                <form class="row g-3">
+                <form action="https://formsubmit.co/ajax/alvaromenar@gmail.com" method="POST" class="row g-3 ajax">
                 <div class="col-md-6">
                     <label for="inputText4" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="inputText4">
+                    <input type="text" class="form-control" id="inputText4" name="name">
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="inputEmail4" name="email">
                 </div>
         
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    ></textarea>
+                <div class="form-label">
                     <label for="floatingTextarea2">Comments</label>
+                    <textarea name="comments" class="form-control" placeholder="Leave a comment here!" id="floatingTextarea2"
+                    ></textarea>
                 </div>
                 <div class="col-12">
                     <div class="form-check">
@@ -159,7 +161,18 @@
                 <div class="col-12">
                     <button type="submit" class="btn btn">Enviar</button>
                 </div>
+
+                
+                <!-- CAMPOS DE CONFIGURACION -->
+                <input type="hidden" name="_subject" value="Menaje de mi Website!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
                 </form>
+
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+                <script src="../js/form.js"></script>
             </section>
 
             <!-- PIE DE PAGINA / FOOTER -->

@@ -33,7 +33,7 @@ $('form.ajax').submit(function(evento){
         success: (data) => {
         console.log(data);
         alert("Formulario enviado con Exito!");
-    $('form.ajax')[0].resent();
+    $('form.ajax')[0].reset();
         },
         error: (err) => console.log(err)
     });

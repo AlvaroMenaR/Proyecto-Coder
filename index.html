@@ -108,22 +108,25 @@
                     </button>
                 </div>
             </section>
+
+            <!-- FORMULARIO -->
+
             <section class="container-fluid p-5 mt-4 rounded  contact">
                 <p class="text-uppercase fs-5">Inscríbete en nuestro newsletter & noticias destacadas!</p>
-                <form class="row g-3">
+                <form action="https://formsubmit.co/alvaromenar@gmail.com" method="POST" class="row g-3">
                 <div class="col-md-6">
                     <label for="inputText4" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="inputText4">
+                    <input type="text" class="form-control" id="inputText4" name="name">
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="inputEmail4" name="email">
                 </div>
         
                 <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    ></textarea>
                     <label for="floatingTextarea2">Comments</label>
+                    <textarea name="comments" class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    ></textarea>
                 </div>
                 <div class="col-12">
                     <div class="form-check">

@@ -5,34 +5,38 @@ $('form.ajax').submit(function(evento){
         console.log(evento);
         console.log($(this));
 
-let objectForm = $(this),
-sendMethod = objectForm.attr('method'),
-sendUrl = objectForm.attr('action'),
-sendData = {};
+    let objectForm = $(this),
+    sendMethod = objectForm.attr('method'),
+    sendUrl = objectForm.attr('action'),
+    sendData = {};
 
-objectForm.find("[name]").each(function(index, formItem){
-console.log(index, formItem);
+    objectForm.find("[name]").each(function(index, formItem){
+    console.log(index, formItem);
 
-let item = $(this),
-name = item.attr('name'),
-nameValue = item.val();
+    let item = $(this),
+    name = item.attr('name'),
+    nameValue = item.val();
 
-sendData[name] = nameValue;
+    sendData[name] = nameValue;
 
-});
+    });
 
-console.log(sendData);
+    console.log(sendData);
 
 
-$.ajax({
-    method: sendMethod,
-    url: sendUrl,
-    dataType: 'json',
-    accepts: 'application/json',
-    data: sendData,
-    success: (data) => console.log(data),
-    error: (err) => console.log(err)
-});
+    $.ajax({
+        method: sendMethod,
+        url: sendUrl,
+        dataType: 'json',
+        accepts: 'application/json',
+        data: sendData,
+        success: (data) => {
+        console.log(data);
+        alert("Formulario enviado con Exito!");
+    $('form.ajax')[0].resent();
+        },
+        error: (err) => console.log(err)
+    });
 
 
 });

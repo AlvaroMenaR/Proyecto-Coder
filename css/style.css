@@ -294,11 +294,11 @@ header{
         font-size: 10px;
     }
     .product-card-entrenamiento img {
-        margin-top: 8%;
+        margin: auto;
     }
 
     .cuadro-entrenamiento{
-        margin-top: -10%;
+        margin: auto;
     }
 }
 

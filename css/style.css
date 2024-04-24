@@ -431,11 +431,10 @@ header{
 
 .contenedor_tarjeta {
 	margin: 20px;
+    cursor: pointer;
 }
 
-.contenedor_tarjeta a {
-	display: inline-block;
-}
+
 
 .contenedor_tarjeta:hover figure {
 	transform: perspective(600px) rotateY(180deg);

@@ -320,7 +320,6 @@ header{
 .product-card-reportaje {
     display: grid;
     grid-template-columns: 1fr 3fr;
-
     background-color: RGB(260, 260, 235);
     transition: 0.5s;
     overflow-x: hidden;
@@ -497,6 +496,34 @@ header{
     .entrenamiento-card-text{
         font-size: 10px;
     }
+
+    .entrenamiento-card-text .card-text{
+        font-size: 12px;
+    }
+
+    .entrenamiento-card-text .card-title{
+        font-size: 15px;
+    }
+
+    .entrenamiento .entrenamiento-e{
+        font-size: 16px;
+    }
+
+
+
+
+    .product-card-reportaje {
+        grid-template-columns: 1fr;
+
+    }
+    
+    .product-card-reportaje img {
+        width: 50%;
+        object-fit: cover;
+        margin: auto;
+    }
+
+    
 
 }
 

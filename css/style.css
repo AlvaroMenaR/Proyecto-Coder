@@ -637,15 +637,10 @@ figure .trasera p {
 
     /* SOBRE NOSOTROS */
 
-    figure .trasera {
-		/*position: relative;*/
-		backface-visibility:visible;
-		transform: perspective(600px) rotateY(0deg);
-	}
+    .contenedor_tarjeta:hover figure {
+        transform: perspective(600px) rotateY(180deg);
 
-	.contenedor_tarjeta:hover figure {
-		transform: perspective(600px) rotateY(0deg);	
-	}
-    
+    }
+
 }
 

@@ -32,7 +32,7 @@ $('form.ajax').submit(function(evento){
         data: sendData,
         success: (data) => {
         console.log(data);
-        alert("Formulario enviado con Exito!");
+        alert("Formulario enviado con Éxito!");
     $('form.ajax')[0].reset();
         },
         error: (err) => console.log(err)

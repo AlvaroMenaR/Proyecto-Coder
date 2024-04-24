@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="./images/logo-final.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo-final.jpg" type="image/x-icon">
     <!-- FONT AWESOME/ICONOS -->
     <script src="https://kit.fontawesome.com/9fde53c0e7.js" crossorigin="anonymous"></script>
     <!-- link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- link css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Sport&Blog</title>
 </head>
 <body>
@@ -21,133 +21,194 @@
             &#8801
         </label>
         <nav class="menu">
-            <a href="" class="enlace">Inicio</a>
-            <a href="./pages/entrenamiento.html" target="_blank" class="enlace">Entrenamiento</a>
-            <a href="./pages/reportaje.html" target="_blank" class="enlace">Reportaje</a>
-            <a href="./pages/contacto.html" target="_blank" class="enlace">Contacto</a>
-            <a href="./pages/us.html" target="_blank" class="enlace">Sobre Nosotros</a>
+            <a href="../index.html" target="_blank"  class="enlace">Inicio</a>
+            <a href="../pages/entrenamiento.html" target="_blank" class="enlace">Entrenamiento</a>
+            <a href="../pages/reportaje.html" class="enlace">Reportaje</a>
+            <a href="../pages/contacto.html" target="_blank" class="enlace">Contacto</a>
+            <a href="../pages/us.html" class="enlace">Sobre Nosotros</a>
             <label for="check" class="esconder-menu">
                 &#215
             </label>
         </nav>
     </header>
-    
+
+
 
     <main>
-        <section class="container-fluid py-4 banner">
-            <div class="col-md-12 mt-5">
-                <p class="p-1 text-center h3">POST DESTACADO</p>
-                <p class="p-1 text-center h4">¿PORQUE NOS PREPARAMOS?</p>
-                <p class="p-1 text-center h6">LAS METAS SON LAS QUE NOSOTROS NOS FIJAMOS</p>
-                <a href="" class="btn-banner fw-bold text-uppercase">Saber más</a>
+        <div class="contenedor">
+            <div class="contenedor_tarjeta">
+                <a href="">
+                    <figure id="tarjeta">
+                        <img src="../images/us1.jpeg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo">Mi pasión es el deporte, compentencias de larga distancia.</h2>
+                            <hr>
+                            <p>Apasionado del ciclismo, conocer lugares nuevos en cada ruta, y por sobre todo esforzarme por ir mas allá.</p>
+                        </figcaption>
+                    </figure>
+                </a>
             </div>
-        </section>
+    
+            <div class="contenedor_tarjeta">
+                <a href=""> 
+                    <figure id="tarjeta">
+                        <img src="../images/us2.jpeg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo">Me llamo Alvaro, tengo 40 años y vivo un dia a dia siempre alegre.</h2>
+                            <hr>
+                            <p>Ingeniero Civil Mecanico, apasionado del deporte, la música y la familia. Contento de los 40 años que llevo recorridos y esperando recorrer otros 40 años mas aprendiendo y disfrutando cada etapa.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+    
+            <div class="contenedor_tarjeta">
+                <a href="">
+                    <figure id="tarjeta">
+                        <img src="../images/us3.jpeg" class="frontal" alt="">
+                        <figcaption class="trasera">
+                            <h2 class="titulo">Cada año un nuevo proyecto.</h2>
+                            <hr>
+                            <p>Un dia puedo ser deportista de IM, otro año un apasionado Musico, lo que me caracteriza es que siempre busco algo para no aburrirme, creo que la escencia esta en trabajar esa parte que es la mas debil, asi se puede tener mas ideas o sueños, por alcanzar.</p>
+                        </figcaption>
+                    </figure>
+                </a>
+            </div>
+        </div>
+    </main>
 
-        
-        <section class="container-fluid py-5">
-            <article class="row">
-                <div class="col-md-12 mx-auto reportaje rounded">
-                    <h2 class="p-5 text-center fw-bold text-uppercase ">Reportajes</h2>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 my-2">
-                    <div class="product-card rounded">
-                        <img src="./images/foto-cerro-sol.jpeg" alt="...">
-                        <div class="product-body">
-                            <h5 class="card-title fw-bold text-uppercase">Lugares para hacer deporte</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                            </p>
-                            <a href="#" class="btn fw-bold text-uppercase">Saber más</a>
-                        </div>
-                    </div>
-                </div>
+            <!-- FORMULARIO -->
 
-                <div class="col-lg-4 col-md-4 col-sm-6 my-2">
-                    <div class="product-card rounded">
-                        <img src="./images/tres-mil-metros.jpeg" alt="...">
-                        <div class="product-body">
-                            <h5 class="card-title fw-bold text-uppercase">La meta</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                            </p>
-                            <a href="#" class="btn fw-bold text-uppercase">Saber más</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-4 col-sm-6 my-2">
-                    <div class="product-card rounded">
-                        <img src="./images/tasa-de-cafe.jpg" alt="...">
-                        <div class="product-body">
-                            <h5 class="card-title fw-bold text-uppercase">Buenos alimentos</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                        content.
-                            </p>
-                            <a href="#" class="btn fw-bold text-uppercase">Saber más</a>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <section>
-                <div id="carouselExample" class="carousel slide carousel-fade">
-                    <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./images/carrusel1.jpg" class="d-block w-100 object-fit-cover" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/carrusel2.jpg" class="d-block w-100 object-fit-cover" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./images/carrusel3.jpg" class="d-block w-100 object-fit-cover" alt="...">
-                    </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </section>
-
-
-
+            <!--   Submitform HTML/AJAX-->
 
             <section class="container-fluid p-5 mt-4 rounded  contact">
                 <p class="text-uppercase fs-5">Inscríbete en nuestro newsletter & noticias destacadas!</p>
-                <form class="row g-3">
+                <form action="https://formsubmit.co/ajax/alvaromenar@gmail.com" method="POST" class="row g-3 ajax">
                 <div class="col-md-6">
                     <label for="inputText4" class="form-label">Name</label>
-                    <input type="text" class="form-control" id="inputText4">
+                    <input type="text" class="form-control" id="inputText4" name="name" required>
                 </div>
                 <div class="col-md-6">
                     <label for="inputEmail4" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4">
+                    <input type="email" class="form-control" id="inputEmail4" name="email" required>
                 </div>
         
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    ></textarea>
+                <div class="form-label">
                     <label for="floatingTextarea2">Comments</label>
+                    <textarea name="comments" class="form-control" placeholder="Leave a comment here!" id="floatingTextarea2"
+                    ></textarea>
                 </div>
+
                 <div class="col-12">
-                    <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                        Check me out
-                    </label>
+                    <button type="submit" class="btn-news btn">Enviar</button>
+                </div>
+
+                
+                <!-- CAMPOS DE CONFIGURACION -->
+                <input type="hidden" name="_subject" value="Menaje de mi Website!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+
+                </form>
+
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+                <script src="../js/form.js"></script>
+            </section>
+
+            <!-- SLIDER -->
+            <div class="slider">
+                <div class="slide-track">
+
+                    <!-- 14 SLIDES -->
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider1.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider2.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider3.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider4.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider5.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider6.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider7.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider8.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider9.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider10.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider11.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider12.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider13.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider14.JPG" alt="">
+                    </div>
+                    <!-- MISMAS 14 SLIDES -->
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider1.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider2.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider3.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider4.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider5.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider6.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider7.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider8.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider9.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider10.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider11.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider12.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider13.JPG" alt="">
+                    </div>
+                    <div class="slide-e">
+                        <img src="../images/slider-e/slider14.JPG" alt="">
                     </div>
                 </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn">Enviar</button>
-                </div>
-                </form>
-            </section>
+            </div>
+
 
             <!-- PIE DE PAGINA / FOOTER -->
             <footer class="pie-pagina mt-4">
@@ -155,13 +216,13 @@
                     <div class="box">
                         <figure>
                             <a href="#"></a>
-                            <img src="./images/ciclismo-de-montana.webp" alt="logo de Sport&Blog" class="rounded">
+                            <img src="../images/ciclismo-de-montana.webp" alt="logo de Sport&Blog" class="rounded">
                         </figure>
                     </div>
                     <div class="box text-center">
                         <h2>SOBRE NOSOTROS</h2>
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, quasi!</P>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, veniam.</p>
+                        <P>Apasionados del deporte, buscamos superación, bienestar y comunidad atlética.</P>
+                        <p>Siguemos!</p>
                     </div>
                     <div class="box text-center">
                         <h2>SIGUENOS</h2>

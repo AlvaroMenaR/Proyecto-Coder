@@ -636,11 +636,8 @@ figure .trasera p {
 
 
     /* SOBRE NOSOTROS */
-
     .contenedor_tarjeta:hover figure {
         transform: perspective(600px) rotateY(180deg);
-
     }
-
 }
 

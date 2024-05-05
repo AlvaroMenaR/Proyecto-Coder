@@ -1,0 +1,24 @@
+
+/* ENTRENAMIENTO */
+
+.entrenamiento{
+    margin-top: -40px;
+    width: 90%;
+    background-color: #d3e6db;
+}
+
+/* CARD ENTRENAMIENTO */
+.product-card-entrenamiento {
+    display: flex;
+    background-color: RGB(260, 260, 235);
+    transition: 0.5s;
+    overflow-x: hidden;
+
+    img{
+        width: 25%;
+        height: 25%;
+        object-fit: cover;
+    }
+}
+
+

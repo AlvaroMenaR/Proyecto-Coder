@@ -1,0 +1,59 @@
+
+/* PIE DE PAGINA / FOOTER */
+
+.pie-pagina{
+    width: 100%;
+    background: #0a141d;
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        padding: 45px 0px;
+
+        .box figure{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img{
+                width: 250px;
+            }
+
+        }
+        .box h2{
+            color: #fff;
+            margin-bottom: 25px;
+            font-size: 20px;
+            
+        }
+        .box p{
+            color: #efefef;
+            margin-bottom: 10px;
+        }
+        .red-social a{
+            display: inline-block;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            color: #fff;
+            margin-right: 10px;
+            background-color: #0d2033;
+            transition: all 300ms ease;
+        }
+        .red-social a:hover{
+            color: aqua;
+        }
+    }
+    .grupo-2{
+        background-color: #0a1a2a;
+        padding: 15px 10px;
+        color: #fff;
+    }
+    
+}

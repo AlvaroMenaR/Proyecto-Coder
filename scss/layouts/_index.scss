@@ -1,0 +1,84 @@
+
+/* REPORTAJE */
+
+.reportaje{
+    margin-top: -40px;
+    width: 95%;
+    background-color: #d3e6db;
+}
+
+/* CARD */
+.product-card {
+    background-color: rgb(245, 244, 210);
+    transition: 0.5s;
+    overflow-x: hidden;
+
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        transition: 0.5s;
+    }
+}
+
+.product-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+
+
+
+
+/* BANNER */
+.banner{
+    padding: 0px 0px;
+    margin-top: -40px;
+    --s: 30px; /* control the size */
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+    
+    --_g: var(--c3) 0 120deg,#0000 0;
+    background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                            var(--c1) 0 calc(500%/6),var(--c2) 0);
+    background-size: calc(1.732*var(--s)) var(--s);
+    height: 25vh;
+    background-size: cover;
+    background-position: center;  
+    
+    p{
+        margin-top: -10px;
+    }
+}
+
+.btn-banner {
+    display: flex;
+    color: black;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
+// carousel
+.carousel-inner,
+.carousel-item {
+    width: 100%;
+    height: 500px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

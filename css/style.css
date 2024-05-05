@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -8,138 +9,94 @@ a {
   text-decoration: none;
 }
 
-/* HEADER */
-header {
-  height: 100px;
-  background: #4d4d5c;
-  padding: 0 50px;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  /* HEADER */
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #4d4d5c;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+  header .logo {
+    z-index: 100;
+  }
+  .menu h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  .banner p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  /* PIE DE PAGINA / FOOTER */
+  .pie-pagina .grupo-1 {
+    /* width: 100%; */
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 30px;
+    padding: 35px 0px; */
+  }
+  /* ENTRENAMIENTO */
+  .product-card-entrenamiento .card-title {
+    font-size: 10px;
+  }
+  .product-card-entrenamiento .card-text {
+    font-size: 10px;
+  }
+  .product-card-entrenamiento img {
+    margin: auto;
+  }
+  .cuadro-entrenamiento {
+    margin: auto;
+  }
+  .entrenamiento-card-text {
+    font-size: 10px;
+  }
+  .entrenamiento-card-text .card-text {
+    font-size: 12px;
+  }
+  .entrenamiento-card-text .card-title {
+    font-size: 15px;
+  }
+  .entrenamiento .entrenamiento-e {
+    font-size: 16px;
+  }
+  .product-card-reportaje {
+    grid-template-columns: 1fr;
+  }
+  .product-card-reportaje img {
+    width: 50%;
+    object-fit: cover;
+    margin: auto;
+  }
+  /* SOBRE NOSOTROS */
+  .contenedor_tarjeta:hover figure {
+    transform: perspective(600px) rotateY(180deg);
+  }
 }
-
-.logo {
-  text-transform: uppercase;
-  color: #6cc091;
-  font-weight: 200;
-}
-
-.menu a {
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0px 10px;
-  transition: 0.4s;
-}
-
-.mostrar-menu,
-.esconder-menu {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  transition: 0.4s;
-}
-
-.mostrar-menu {
-  order: 1;
-}
-
-.menu a:hover,
-.mostrar-menu:hover,
-.esconder-menu:hover {
-  color: #6cc091;
-}
-
-#check {
-  display: none;
-}
-
-/* BANNER */
-.banner {
-  padding: 0px 0px;
-  margin-top: -40px;
-  --s: 30px; /* control the size */
-  --c1: #b2b2b2;
-  --c2: #ffffff;
-  --c3: #d9d9d9;
-  --_g: var(--c3) 0 120deg,#0000 0;
-  background: conic-gradient(from -60deg at 50% 33.3333333333%, var(--_g)), conic-gradient(from 120deg at 50% 66.6666666667%, var(--_g)), conic-gradient(from 60deg at 66.6666666667%, var(--c3) 60deg, var(--c2) 0 120deg, rgba(0, 0, 0, 0) 0), conic-gradient(from 180deg at 33.3333333333%, var(--c1) 60deg, var(--_g)), linear-gradient(90deg, var(--c1) 16.6666666667%, var(--c2) 0 50%, var(--c1) 0 83.3333333333%, var(--c2) 0);
-  background-size: calc(1.732 * var(--s)) var(--s);
-  height: 25vh;
-  background-size: cover;
-  background-position: center;
-}
-.banner p {
-  margin-top: -10px;
-}
-
-.btn-banner {
-  display: flex;
-  color: black;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
-}
-
-/* REPORTAJE */
-.reportaje {
-  margin-top: -40px;
-  width: 95%;
-  background-color: #d3e6db;
-}
-
-/* CARD */
-.product-card {
-  background-color: rgb(245, 244, 210);
-  transition: 0.5s;
-  overflow-x: hidden;
-}
-.product-card img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-.product-body {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding: 10px;
-  transition: 0.5s;
-}
-
-/* carousel */
-.carousel-inner,
-.carousel-item {
-  width: 100%;
-  height: 500px;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* CONTACTO */
-.contact {
-  background-color: #cef1dd;
-  width: 70%;
-}
-
-.btn-news {
-  color: #000;
-  font-size: 15px;
-  border-radius: 10px;
-  border: 2px solid #beadad;
-}
-.btn-news:hover {
-  transition: 0.3s all linear;
-  background: hsla(39, 94%, 49%, 0.8);
-  color: #000;
-}
-
 /* PIE DE PAGINA / FOOTER */
 .pie-pagina {
   width: 100%;
@@ -192,24 +149,50 @@ header {
   color: #fff;
 }
 
-/* ENTRENAMIENTO */
-.entrenamiento {
-  margin-top: -40px;
-  width: 90%;
-  background-color: #d3e6db;
+/* HEADER */
+header {
+  height: 100px;
+  background: #4d4d5c;
+  padding: 0 50px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* CARD ENTRENAMIENTO */
-.product-card-entrenamiento {
-  display: flex;
-  background-color: RGB(260, 260, 235);
-  transition: 0.5s;
-  overflow-x: hidden;
+.logo {
+  text-transform: uppercase;
+  color: #6cc091;
+  font-weight: 200;
 }
-.product-card-entrenamiento img {
-  width: 25%;
-  height: 25%;
-  object-fit: cover;
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0px 10px;
+  transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: #6cc091;
+}
+
+#check {
+  display: none;
 }
 
 /* SLIDER */
@@ -278,27 +261,25 @@ header {
   transform: rotateZ(180deg);
 }
 
-/* REPORTAJE-SP */
-.reportaje-sp {
-  margin-top: -40px;
-  width: 90%;
+/* CONTACTO SUSCRIPCION */
+.contact {
+  background-color: #cef1dd;
+  width: 70%;
 }
 
-/* CARD REPORTAJE-SP */
-.product-card-reportaje {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  background-color: RGB(260, 260, 235);
-  transition: 0.5s;
-  overflow-x: hidden;
+.btn-news {
+  color: #000;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 2px solid #beadad;
 }
-.product-card-reportaje img {
-  width: 90%;
-  object-fit: cover;
-  align-self: center;
+.btn-news:hover {
+  transition: 0.3s all linear;
+  background: hsla(39, 94%, 49%, 0.8);
+  color: #000;
 }
 
-/* CONTACTO */
+/* CONTACTO PESTAÑA*/
 .contact-in-map {
   width: 100%;
   height: 100vh;
@@ -386,7 +367,114 @@ header {
   color: #000;
 }
 
-/* SOBRE NOSOTROS */
+/* ENTRENAMIENTO */
+.entrenamiento {
+  margin-top: -40px;
+  width: 90%;
+  background-color: #d3e6db;
+}
+
+/* CARD ENTRENAMIENTO */
+.product-card-entrenamiento {
+  display: flex;
+  background-color: RGB(260, 260, 235);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+.product-card-entrenamiento img {
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+}
+
+/* REPORTAJE */
+.reportaje {
+  margin-top: -40px;
+  width: 95%;
+  background-color: #d3e6db;
+}
+
+/* CARD */
+.product-card {
+  background-color: rgb(245, 244, 210);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+.product-card img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.product-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+
+/* BANNER */
+.banner {
+  padding: 0px 0px;
+  margin-top: -40px;
+  --s: 30px; /* control the size */
+  --c1: #b2b2b2;
+  --c2: #ffffff;
+  --c3: #d9d9d9;
+  --_g: var(--c3) 0 120deg,#0000 0;
+  background: conic-gradient(from -60deg at 50% 33.3333333333%, var(--_g)), conic-gradient(from 120deg at 50% 66.6666666667%, var(--_g)), conic-gradient(from 60deg at 66.6666666667%, var(--c3) 60deg, var(--c2) 0 120deg, rgba(0, 0, 0, 0) 0), conic-gradient(from 180deg at 33.3333333333%, var(--c1) 60deg, var(--_g)), linear-gradient(90deg, var(--c1) 16.6666666667%, var(--c2) 0 50%, var(--c1) 0 83.3333333333%, var(--c2) 0);
+  background-size: calc(1.732 * var(--s)) var(--s);
+  height: 25vh;
+  background-size: cover;
+  background-position: center;
+}
+.banner p {
+  margin-top: -10px;
+}
+
+.btn-banner {
+  display: flex;
+  color: black;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  height: 500px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* REPORTAJE-SP */
+.reportaje-sp {
+  margin-top: -40px;
+  width: 90%;
+}
+
+/* CARD REPORTAJE-SP */
+.product-card-reportaje {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  background-color: RGB(260, 260, 235);
+  transition: 0.5s;
+  overflow-x: hidden;
+}
+.product-card-reportaje img {
+  width: 90%;
+  object-fit: cover;
+  align-self: center;
+}
+
+/* SOBRE NOSOTROS - US */
 .contenedor {
   max-width: 1200px;
   margin: 50px auto;
@@ -488,95 +576,6 @@ figure .trasera {
   object-fit: cover;
   border-radius: 5px;
   transition: all ease 0.5s;
-}
-
-/* RESPONSIVE */
-@media (max-width: 700px) {
-  /* HEADER */
-  .mostrar-menu,
-  .esconder-menu {
-    display: block;
-  }
-  .menu {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #4d4d5c;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 100px 0px;
-    z-index: 100;
-    transition: 0.8s;
-  }
-  .menu a {
-    display: block;
-    padding: 20px;
-  }
-  .esconder-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  #check:checked ~ .menu {
-    right: 0;
-  }
-  header .logo {
-    z-index: 100;
-  }
-  .menu h2 {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-  }
-  .banner p {
-    font-size: 10px;
-    font-weight: bold;
-  }
-  /* PIE DE PAGINA / FOOTER */
-  .pie-pagina .grupo-1 {
-    /* width: 100%; */
-    grid-template-columns: repeat(1, 1fr);
-    /* gap: 30px;
-    padding: 35px 0px; */
-  }
-  /* ENTRENAMIENTO */
-  .product-card-entrenamiento .card-title {
-    font-size: 10px;
-  }
-  .product-card-entrenamiento .card-text {
-    font-size: 10px;
-  }
-  .product-card-entrenamiento img {
-    margin: auto;
-  }
-  .cuadro-entrenamiento {
-    margin: auto;
-  }
-  .entrenamiento-card-text {
-    font-size: 10px;
-  }
-  .entrenamiento-card-text .card-text {
-    font-size: 12px;
-  }
-  .entrenamiento-card-text .card-title {
-    font-size: 15px;
-  }
-  .entrenamiento .entrenamiento-e {
-    font-size: 16px;
-  }
-  .product-card-reportaje {
-    grid-template-columns: 1fr;
-  }
-  .product-card-reportaje img {
-    width: 50%;
-    object-fit: cover;
-    margin: auto;
-  }
-  /* SOBRE NOSOTROS */
-  .contenedor_tarjeta:hover figure {
-    transform: perspective(600px) rotateY(180deg);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,13 @@
 // base
 @import "base/reset";
-@import "base/responsive";
 @import "base/vars";
 
 // components
-@import "components/footer";
+
 @import "components/header";
 @import "components/navbar";
 @import "components/slider";
+@import "components/footer";
 
 // layout
 @import "layouts/contacto";
@@ -15,4 +15,5 @@
 @import "layouts/index";
 @import "layouts/reportaje";
 @import "layouts/us";
+@import "layouts/responsive";
 

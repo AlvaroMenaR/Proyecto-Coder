@@ -1,6 +1,11 @@
 
 /* HEADER */
 
+@mixin head-a($color, $text-transform){
+    color: $color;
+    text-transform: $text-transform;
+}
+
 header{
     height: 100px;
     background: #4d4d5c;
@@ -12,13 +17,11 @@ header{
 }
 
 .logo{
-    text-transform: uppercase;
-    color: #6cc091;
+    @include head-a(#6cc091, uppercase);
     font-weight: 200;
 }
 .menu a{
-    color: #fff;
-    text-transform: uppercase;
+    @include head-a(#fff, uppercase);
     padding: 0px 10px;
     transition: 0.4s;
 }

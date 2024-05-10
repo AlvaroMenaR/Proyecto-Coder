@@ -9,146 +9,6 @@ a {
   text-decoration: none;
 }
 
-/* RESPONSIVE */
-@media (max-width: 700px) {
-  /* HEADER */
-  .mostrar-menu,
-  .esconder-menu {
-    display: block;
-  }
-  .menu {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #4d4d5c;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 100px 0px;
-    z-index: 100;
-    transition: 0.8s;
-  }
-  .menu a {
-    display: block;
-    padding: 20px;
-  }
-  .esconder-menu {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-  }
-  #check:checked ~ .menu {
-    right: 0;
-  }
-  header .logo {
-    z-index: 100;
-  }
-  .menu h2 {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-  }
-  .banner p {
-    font-size: 10px;
-    font-weight: bold;
-  }
-  /* PIE DE PAGINA / FOOTER */
-  .pie-pagina .grupo-1 {
-    /* width: 100%; */
-    grid-template-columns: repeat(1, 1fr);
-    /* gap: 30px;
-    padding: 35px 0px; */
-  }
-  /* ENTRENAMIENTO */
-  .product-card-entrenamiento .card-title {
-    font-size: 10px;
-  }
-  .product-card-entrenamiento .card-text {
-    font-size: 10px;
-  }
-  .product-card-entrenamiento img {
-    margin: auto;
-  }
-  .cuadro-entrenamiento {
-    margin: auto;
-  }
-  .entrenamiento-card-text {
-    font-size: 10px;
-  }
-  .entrenamiento-card-text .card-text {
-    font-size: 12px;
-  }
-  .entrenamiento-card-text .card-title {
-    font-size: 15px;
-  }
-  .entrenamiento .entrenamiento-e {
-    font-size: 16px;
-  }
-  .product-card-reportaje {
-    grid-template-columns: 1fr;
-  }
-  .product-card-reportaje img {
-    width: 50%;
-    object-fit: cover;
-    margin: auto;
-  }
-  /* SOBRE NOSOTROS */
-  .contenedor_tarjeta:hover figure {
-    transform: perspective(600px) rotateY(180deg);
-  }
-}
-/* PIE DE PAGINA / FOOTER */
-.pie-pagina {
-  width: 100%;
-  background: #0a141d;
-}
-.pie-pagina .grupo-1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 50px;
-  padding: 45px 0px;
-}
-.pie-pagina .grupo-1 .box figure {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pie-pagina .grupo-1 .box figure img {
-  width: 250px;
-}
-.pie-pagina .grupo-1 .box h2 {
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.pie-pagina .grupo-1 .box p {
-  color: #efefef;
-  margin-bottom: 10px;
-}
-.pie-pagina .grupo-1 .red-social a {
-  display: inline-block;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: #0d2033;
-  transition: all 300ms ease;
-}
-.pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
-}
-.pie-pagina .grupo-2 {
-  background-color: #0a1a2a;
-  padding: 15px 10px;
-  color: #fff;
-}
-
 /* HEADER */
 header {
   height: 100px;
@@ -161,8 +21,8 @@ header {
 }
 
 .logo {
-  text-transform: uppercase;
   color: #6cc091;
+  text-transform: uppercase;
   font-weight: 200;
 }
 
@@ -197,18 +57,17 @@ header {
 
 /* SLIDER */
 .slider {
-  /* height: 20px; */
-  margin: auto;
-  position: relative;
   width: 95%;
   display: grid;
+  margin: auto;
+  position: relative;
   place-items: center;
   overflow: hidden;
 }
 
 .slide-track {
-  display: flex;
   width: 7000px;
+  display: flex;
   animation: scroll 50s linear infinite;
 }
 .slide-track:hover {
@@ -224,9 +83,9 @@ header {
   }
 }
 .slide-e {
-  height: 200px;
   width: 250px;
   display: flex;
+  height: 200px;
   align-items: center;
   padding: 15px;
   perspective: 100px;
@@ -259,6 +118,58 @@ header {
   right: 0;
   top: 0;
   transform: rotateZ(180deg);
+}
+
+/* PIE DE PAGINA / FOOTER */
+.pie-pagina {
+  width: 100%;
+  background: #0a141d;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  display: grid;
+  max-width: 1200px;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a {
+  width: 45px;
+  display: inline-block;
+  background-color: #0d2033;
+  color: #fff;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  color: #fff;
+  padding: 15px 10px;
 }
 
 /* CONTACTO SUSCRIPCION */
@@ -490,39 +401,18 @@ header {
 }
 .contenedor_tarjeta:hover figure {
   transform: perspective(600px) rotateY(180deg);
-  -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
 }
 .contenedor_tarjeta:nth-child(1) figure .trasera {
   background: rgba(223, 234, 241, 0.7);
-  background: -moz-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223, 234, 241, 0.7)), color-stop(100%, rgb(15, 99, 144)));
-  background: -webkit-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  background: -o-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  background: -ms-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
   background: linear-gradient(to bottom, rgba(223, 234, 241, 0.7) 0%, rgb(15, 99, 144) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#dfeaf1", endColorstr="#0f6390", GradientType=0 );
 }
 .contenedor_tarjeta:nth-child(2) figure .trasera {
   background: rgba(251, 232, 202, 0.7);
-  background: -moz-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(25, 44, 72) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251, 232, 202, 0.7)), color-stop(100%, rgb(25, 44, 72)));
-  background: -webkit-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(25, 44, 72) 100%);
-  background: -o-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(25, 44, 72) 100%);
-  background: -ms-linear-gradient(top, rgba(251, 232, 202, 0.7) 0%, rgb(25, 44, 72) 100%);
   background: linear-gradient(to bottom, rgba(251, 232, 202, 0.7) 0%, rgb(25, 44, 72) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#fbe8ca", endColorstr="#192c48", GradientType=0 );
 }
 .contenedor_tarjeta:nth-child(3) figure .trasera {
   background: rgba(95, 58, 53, 0.7);
-  background: -moz-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95, 58, 53, 0.7)), color-stop(100%, rgb(221, 32, 47)));
-  background: -webkit-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
-  background: -o-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
-  background: -ms-linear-gradient(top, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
   background: linear-gradient(to bottom, rgba(95, 58, 53, 0.7) 0%, rgb(221, 32, 47) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#5f3a35", endColorstr="#dd202f", GradientType=0 );
 }
 
 figure {
@@ -537,8 +427,6 @@ figure {
 figure .frontal {
   display: block;
   background: #000;
-  /* Podemos ocultar la imagen al da la vuelta si lo queremos */
-  /*backface-visibility: hidden;*/
 }
 figure .trasera {
   position: absolute;
@@ -576,6 +464,95 @@ figure .trasera {
   object-fit: cover;
   border-radius: 5px;
   transition: all ease 0.5s;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+  /* HEADER */
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #4d4d5c;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 0.8s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+  header .logo {
+    z-index: 100;
+  }
+  .menu h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+  }
+  .banner p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  /* PIE DE PAGINA / FOOTER */
+  .pie-pagina .grupo-1 {
+    /* width: 100%; */
+    grid-template-columns: repeat(1, 1fr);
+    /* gap: 30px;
+    padding: 35px 0px; */
+  }
+  /* ENTRENAMIENTO */
+  .product-card-entrenamiento .card-title {
+    font-size: 10px;
+  }
+  .product-card-entrenamiento .card-text {
+    font-size: 10px;
+  }
+  .product-card-entrenamiento img {
+    margin: auto;
+  }
+  .cuadro-entrenamiento {
+    margin: auto;
+  }
+  .entrenamiento-card-text {
+    font-size: 10px;
+  }
+  .entrenamiento-card-text .card-text {
+    font-size: 12px;
+  }
+  .entrenamiento-card-text .card-title {
+    font-size: 15px;
+  }
+  .entrenamiento .entrenamiento-e {
+    font-size: 16px;
+  }
+  .product-card-reportaje {
+    grid-template-columns: 1fr;
+  }
+  .product-card-reportaje img {
+    width: 50%;
+    object-fit: cover;
+    margin: auto;
+  }
+  /* SOBRE NOSOTROS */
+  .contenedor_tarjeta:hover figure {
+    transform: perspective(600px) rotateY(180deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

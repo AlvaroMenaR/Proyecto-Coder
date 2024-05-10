@@ -1,23 +1,36 @@
 
 /* PIE DE PAGINA / FOOTER */
 
+@mixin foot-a($width, $display){
+    width: $width;
+    display: $display;
+}
+
+@mixin foot-b($color, $margin-bottom){
+    color: $color;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin foot-c($background-color, $color){
+    background-color: $background-color;
+    color: $color;
+}
+
 .pie-pagina{
     width: 100%;
     background: #0a141d;
 
     .grupo-1{
-        width: 100%;
+        @include foot-a(100%, grid);
         max-width: 1200px;
         margin: auto;
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 50px;
         padding: 45px 0px;
 
         .box figure{
-            width: 100%;
+            @include foot-a(100%, flex);
             height: 100%;
-            display: flex;
             justify-content: center;
             align-items: center;
 
@@ -27,23 +40,19 @@
 
         }
         .box h2{
-            color: #fff;
-            margin-bottom: 25px;
+            @include foot-b(#fff, 25px);
             font-size: 20px;
             
         }
         .box p{
-            color: #efefef;
-            margin-bottom: 10px;
+            @include foot-b(#efefef, 10px);
         }
         .red-social a{
-            display: inline-block;
-            width: 45px;
+            @include foot-a(45px, inline-block);
+            @include foot-c(#0d2033, #fff);
             height: 45px;
             line-height: 45px;
-            color: #fff;
             margin-right: 10px;
-            background-color: #0d2033;
             transition: all 300ms ease;
         }
         .red-social a:hover{
@@ -51,9 +60,8 @@
         }
     }
     .grupo-2{
-        background-color: #0a1a2a;
+        @include foot-c(#0a1a2a, #fff);
         padding: 15px 10px;
-        color: #fff;
     }
     
 }

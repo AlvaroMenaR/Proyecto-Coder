@@ -1,20 +1,21 @@
-
-
-
 /* SLIDER */
 
+@mixin slider-a($width, $display){
+    width: $width;
+    display: $display;
+}
+
+
+
 .slider{
-    /* height: 20px; */
+    @include slider-a(95%, grid);
     margin: auto;
     position: relative;
-    width: 95%;
-    display: grid;
     place-items: center;
     overflow: hidden;
 }
 .slide-track{
-    display: flex;
-    width: calc(250px * 28);
+    @include slider-a(calc(250px * 28), flex);
     animation: scroll 50s linear infinite;
     
     &:hover{
@@ -32,9 +33,8 @@
 }
 
 .slide-e{
+    @include slider-a(250px, flex);
     height: 200px;
-    width: 250px;
-    display: flex;
     align-items: center;
     padding: 15px;
     perspective: 100px;

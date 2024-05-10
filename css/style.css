@@ -511,10 +511,7 @@ figure .trasera {
   }
   /* PIE DE PAGINA / FOOTER */
   .pie-pagina .grupo-1 {
-    /* width: 100%; */
     grid-template-columns: repeat(1, 1fr);
-    /* gap: 30px;
-    padding: 35px 0px; */
   }
   /* ENTRENAMIENTO */
   .product-card-entrenamiento .card-title {

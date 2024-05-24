@@ -291,6 +291,7 @@ header {
   background-color: RGB(260, 260, 235);
   transition: 0.5s;
   overflow-x: hidden;
+  align-items: center;
 }
 .product-card-entrenamiento img {
   width: 25%;
@@ -550,6 +551,23 @@ figure .trasera {
   .contenedor_tarjeta:hover figure {
     transform: perspective(600px) rotateY(180deg);
   }
+}
+/*En construccion*/
+.under-build {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(157, 182, 204, 0.3098039216);
+}
+.under-build p {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+}
+.under-build i {
+  font-size: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
